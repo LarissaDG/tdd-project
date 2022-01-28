@@ -1,0 +1,22 @@
+Na imagem detalhada na descrição desta atividade vemos a representação do fluxo de trabalho ao utilizarmos o TDD (Test Driven Developement) quando trabalhamos com mais de um tipo de teste, a saber os testes funcionais e os testes de unidade em paralelo. Assim, a figura é uma generalização da imagem original na qual temos os seguintes passos:
+
+1. Escrever um teste
+	a. Se o teste passar verificamos a necessidade de refatoração (Estado vede)
+		I. Se precisar refatorar, executa-se a refatoração garantindo que o comportamento do código original não foi alterado. (Estado amarelo)
+		II. Se não passa-se para a escrita de novos testes que cobriram outros detalhes do sistema. Reiniciando o processo.
+	b. Se o teste não passar escrevemos o código minimo da aplicação. (Estado vermelho). E executa os testes novamente, efetuando pequenas modificações(Baby steps) até o código passar nos testes, nos levando ao item a.
+
+No fluxo de trabalho mais geral, que engloba os testes funcionais e não funcionais, temos os passos que se seguem: 
+
+1. Escrever um teste funcional
+	a. Se o teste funcional passar verificamos a necessidade de refatoração (Estado vede)
+		I. Se precisar refatorar, executa-se a refatoração garantindo que o comportamento do código original não foi alterado. (Estado amarelo). Quando necessário escrevendo testes de unidade para garantir o comportamento e as boas práticas de programação. Vide processo 2.
+		II. Se não passa-se para a escrita de novos testes que cobriram outros detalhes do sistema. Reiniciando o processo.
+	b. Se o teste não passar, vide processo 2
+
+2. Escrever um teste de unidade. Se a aplicação que estamos testando com os testes funcionais ainda não apresenta um teste de unidade o criamos, se já existe trabalha-se no desenvolvimento do "minimal code".
+	a. Se o teste de unidade passar verificamos a necessidade de refatoração (Estado vede)
+		I. Se precisar refatorar, executa-se a refatoração garantindo que o comportamento do código original não foi alterado. (Estado amarelo). 
+		II. Se não executa os testes funcionais, voltando aos itens a ou b de acordo com o resultado da execução dos testes funcionais.
+	b. Se o teste de unidade não passar escrevemos o código minimo da aplicação. (Estado vermelho). E executa os testes novamente, efetuando pequenas modificações(Baby steps) até o código passar nos testes, nos levando ao item a.
+	
