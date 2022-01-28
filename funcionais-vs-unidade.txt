@@ -1,0 +1,4 @@
+Quais outras diferenças existem entre Testes Funcionais e Testes de Unidade?
+
+1. Os testes de unidade garantem o correto funcionamento de funções do software, enquanto os teste funcionais garantem a adequação aos requisitos do sistema.
+2.Enquanto o teste funcional é um teste caixa preta, os testes de unidade são caixa branca. Ou seja, o primeiro não precisa saber de detalhes do código para poder executar, já o segundo exige um profundo conhecimento do código da aplicação.
